@@ -1,0 +1,6 @@
+<launch>
+   <arg name="path"  default="$(find ros_waypoint_generator)"/>
+   <arg name="direction"  default="fwd"/> 
+   <arg name="counter"  default="1"/> 
+   <node name="waypoint_saver" pkg="ros_waypoint_generator" type="ros_waypoint_saver" args="$(arg path) $(arg direction) $(arg counter)" output = "screen"/>
+</launch>
