@@ -8,6 +8,12 @@ Launch any robot with the following options,
 2. navigation
 3. rviz
 
+for eg,   
+```
+roslaunch jackal_gazebo jackal_world.launch config:=front_laser
+roslaunch jackal_navigation amcl_demo.launch map_file:=/path/to/my/map.yaml
+roslaunch jackal_viz view_robot.launch config:=localization
+```
 ### To generate Waypoints
 
 To Start the waypoint generator  
@@ -29,11 +35,6 @@ arguments passed to the launch file are,
 1. direction ,values = fwd or rev
 2. counter, values = counter no 
 3. path, values = /path/to/store/csvfile.   
-
-for eg,   
-roslaunch jackal_gazebo jackal_world.launch config:=front_laser
-roslaunch jackal_navigation amcl_demo.launch map_file:=/path/to/my/map.yaml
-roslaunch jackal_viz view_robot.launch config:=localization
 
 ### To follow waypoints
 

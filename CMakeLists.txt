@@ -49,9 +49,7 @@ set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
 
 
 ## Declare a C++ executable
-add_executable(ros_waypoint_generator src/ros_waypoint_generator.cpp)
-target_link_libraries(ros_waypoint_generator ${catkin_LIBRARIES} ${Boost_LIBRARIES} -lboost_program_options)
-add_dependencies(ros_waypoint_generator ros_waypoint_generator_generate_messages_cpp)
+
 
 add_executable(ros_waypoint_generator_custom src/ros_waypoint_generator_custom.cpp)
 target_link_libraries(ros_waypoint_generator_custom ${catkin_LIBRARIES} ${Boost_LIBRARIES} -lboost_program_options)
